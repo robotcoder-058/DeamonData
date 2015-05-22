@@ -82,6 +82,8 @@ class Handler():
         result = orderflag.get(data_real["flag"])()
         return result.assemble()
 
+
+    #loop to receive data
     def receiveloop(self):
         while True:
             cli_socket, addr = self.socket.accept()
